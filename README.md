@@ -21,9 +21,10 @@ a working Fusion on this machine – full credit to:
   now continued at <https://codeberg.org/cryinkfly/Autodesk-Fusion-360-on-Linux>.
 - **Everyone in that project's issue tracker** (especially the sign-in threads, issues
   #319 and #473) who tested, logged and shared workarounds.
-- **[Lolig4](https://codeberg.org/Lolig4/Autodesk-Fusion-360-on-Linux)** and the reporter of
-  **WineHQ bug 60010**, whose investigation pinpointed Wine 11.10 as the last version with a
-  working Fusion viewport.
+- **[Lolig4](https://codeberg.org/Lolig4/Autodesk-Fusion-360-on-Linux)** – maintains an updated
+  fork of the installer.
+- **The reporter of WineHQ bug 60010**, whose report pinpointed Wine 11.10 as the last version
+  with a working Fusion viewport.
 - **The Wine / WineHQ developers** – especially for the fixes in newer Wine that stopped the
   sign-in crash.
 - **[DXVK](https://github.com/doitsujin/dxvk)** by Philip Rebohle (doitsujin) and contributors –
@@ -79,6 +80,11 @@ scripts/03-configure-prefix.sh       # DXVK overrides, 175 % scaling, virtual de
 scripts/04-install-scriptbridge.sh   # optional: installs the ScriptBridge add-in
 scripts/launch-fusion.sh             # start Fusion
 ```
+
+## Licence
+
+MIT – see [LICENSE](LICENSE). Covers the scripts, add-in and docs in this repo only, not
+Autodesk Fusion or the projects credited above.
 
 ## Using ScriptBridge
 

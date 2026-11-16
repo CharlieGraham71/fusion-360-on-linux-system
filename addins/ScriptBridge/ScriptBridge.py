@@ -1,9 +1,18 @@
-# ScriptBridge: runs any .py file dropped into ~/fusion-bridge/inbox (Z:\home\graham\fusion-bridge\inbox)
+# ScriptBridge: runs any .py file dropped into ~/fusion-bridge/inbox
 # inside Fusion, then moves it to done/ with a .log of the result.
 import adsk.core, adsk.fusion, traceback, threading, os, io, contextlib, shutil, time
 
-INBOX = r'Z:\home\graham\fusion-bridge\inbox'
-DONE = r'Z:\home\graham\fusion-bridge\done'
+def _linux_home():
+    # Wine exposes the Linux home as WINEHOMEDIR (\\??\\Z:\\home\\<user>) or WINE_HOST_HOME.
+    w = os.environ.get('WINEHOMEDIR', '')
+    if w:
+        return w.replace('\\??\\', '')
+    h = os.environ.get('WINE_HOST_HOME') or ('/home/' + os.environ.get('USERNAME', 'user'))
+    return 'Z:' + h.replace('/', '\\')
+
+_HOME = _linux_home()
+INBOX = os.path.join(_HOME, 'fusion-bridge', 'inbox')
+DONE = os.path.join(_HOME, 'fusion-bridge', 'done')
 EVENT_ID = 'ScriptBridgeTick'
 _app = None
 _handlers = []

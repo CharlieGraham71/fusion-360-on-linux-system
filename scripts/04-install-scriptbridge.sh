@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Install the ScriptBridge add-in (runs .py files dropped into ~/fusion-bridge/inbox).
-# NOTE: the add-in hard-codes Z:\home\graham\fusion-bridge – edit INBOX/DONE for other users.
+# The add-in uses ~/fusion-bridge/{inbox,done} for whichever user runs Fusion.
 set -euo pipefail
 source "$(dirname "$0")/common.sh"
 DEST="$WINEPREFIX/drive_c/users/$USER/AppData/Roaming/Autodesk/Autodesk Fusion 360/API/AddIns/ScriptBridge"
