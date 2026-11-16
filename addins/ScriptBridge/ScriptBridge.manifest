@@ -1,0 +1,9 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "author": "Graham (CharlieGraham71)",
+  "description": {"": "Runs scripts dropped into ~/fusion-bridge/inbox"},
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "runOnStartup": true
+}

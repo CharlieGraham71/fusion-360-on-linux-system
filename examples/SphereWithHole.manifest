@@ -1,0 +1,8 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "script",
+  "author": "Graham (CharlieGraham71)",
+  "description": {"": "50 mm sphere with a 10 mm through hole"},
+  "supportedOS": "windows|mac",
+  "editEnabled": true
+}
