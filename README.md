@@ -9,6 +9,29 @@ Created by **Graham** ([CharlieGraham71](https://github.com/CharlieGraham71)).
 > Fusion itself is **not** in this repo (it is Autodesk's proprietary software).
 > This repo holds the configuration, fixes, helper scripts and notes.
 
+## Origin & thanks
+
+This setup stands on a lot of other people's hard work. We took it and adapted it into
+a working Fusion on this machine – full credit to:
+
+- **[cryinkfly](https://github.com/cryinkfly)** – *Autodesk-Fusion-360-for-Linux*, the installer
+  this whole setup is built on (Wine prefix, DXVK/WebView2 setup, patched Qt DLL, sign-in
+  handler). Original project: <https://github.com/cryinkfly/Autodesk-Fusion-360-for-Linux>,
+  now continued at <https://codeberg.org/cryinkfly/Autodesk-Fusion-360-on-Linux>.
+- **Everyone in that project's issue tracker** (especially the sign-in threads, issues
+  #319 and #473) who tested, logged and shared workarounds.
+- **[Lolig4](https://codeberg.org/Lolig4/Autodesk-Fusion-360-on-Linux)** and the reporter of
+  **WineHQ bug 60010**, whose investigation pinpointed Wine 11.10 as the last version with a
+  working Fusion viewport.
+- **The Wine / WineHQ developers** – especially for the fixes in newer Wine that stopped the
+  sign-in crash.
+- **[DXVK](https://github.com/doitsujin/dxvk)** by Philip Rebohle (doitsujin) and contributors –
+  Fusion's DirectX 11 graphics running on Vulkan.
+- **Mesa / RADV** developers – the Vulkan driver for the Radeon 780M.
+
+Autodesk Fusion is a product of Autodesk, Inc. This repo is an unofficial community setup and
+is not affiliated with or supported by Autodesk.
+
 ## Status (16 Nov 2026)
 
 | Area | Status |
