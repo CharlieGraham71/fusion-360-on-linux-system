@@ -1,0 +1,42 @@
+name: Test report
+description: Tell us whether Fusion worked on your system
+title: "[Test report] <distro> / <GPU> / Wine <version>"
+labels: ["test-report"]
+body:
+  - type: dropdown
+    id: result
+    attributes:
+      label: Overall result
+      options: ["Works", "Partly works", "Doesn't work"]
+    validations: {required: true}
+  - type: input
+    id: distro
+    attributes: {label: "Distro and version", placeholder: "Kali 2026.3, Ubuntu 24.04, Fedora 43…"}
+    validations: {required: true}
+  - type: input
+    id: desktop
+    attributes: {label: "Desktop / session", placeholder: "GNOME Wayland, KDE X11…"}
+  - type: input
+    id: gpu
+    attributes: {label: "Graphics card and driver", placeholder: "AMD Radeon 780M (Mesa RADV 26.1)"}
+    validations: {required: true}
+  - type: input
+    id: wine
+    attributes: {label: "Wine version", placeholder: "wine-staging 11.10"}
+    validations: {required: true}
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: What worked?
+      options:
+        - label: Installs
+        - label: Sign-in
+        - label: 3D viewport draws correctly
+        - label: Can create/edit a model
+        - label: Save / export works
+        - label: ScriptBridge add-in works
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes, errors, screenshots
+      description: Remove any tokens, emails or personal info from logs before pasting.

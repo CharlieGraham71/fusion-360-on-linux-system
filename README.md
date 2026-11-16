@@ -81,6 +81,11 @@ scripts/04-install-scriptbridge.sh   # optional: installs the ScriptBridge add-i
 scripts/launch-fusion.sh             # start Fusion
 ```
 
+## Contributing
+
+Test reports, fixes and examples are welcome – see [CONTRIBUTING.md](CONTRIBUTING.md).
+Questions go in [Discussions](https://github.com/CharlieGraham71/fusion-360-on-linux-system/discussions).
+
 ## Licence
 
 MIT – see [LICENSE](LICENSE). Covers the scripts, add-in and docs in this repo only, not
