@@ -1,5 +1,6 @@
-# Autodesk Fusion on Kali Linux (Wine + DXVK)
+# Fusion 360 on Linux System
 
+Autodesk Fusion (Fusion 360) running on **Kali Linux** with Wine + DXVK.
 A working setup for **Autodesk Fusion (Personal)** on **Kali Linux (GNOME / Wayland)**,
 plus the fixes needed to get there and a small add-in (**ScriptBridge**) that lets
 scripts be dropped into a folder and run inside Fusion automatically.
